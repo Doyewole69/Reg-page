@@ -1,0 +1,223 @@
+body{
+    background-image: url(bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+div.flex-container{
+    display: flex;
+    flex-direction: row;
+    padding-left: 4em;
+   
+}
+
+section.sentence{
+    flex: 50%;
+    text-align: left;
+    padding-top: 10em;
+    transition: 0.5s;
+}
+
+section.reg{
+    flex: 50%;
+    padding-top: 5em;
+    
+}
+
+h1{
+    font-family: poppins;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+p{
+    font-family: poppins;
+    font-size: 16px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+button.days{
+    box-sizing: border-box;
+    font-family: poppins;
+    font-size: 16px;
+    color: whitesmoke;
+    font-weight: 500;
+    background-color: hsl(248, 32%, 49%);
+    width: 30em;
+    height: 3em;
+    border-radius: 6px;
+    border: 1px solid hsl(248, 32%, 49%);
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
+}
+
+button.days:hover{
+    background-color:  hsl(248, 76%, 76%);
+    border: 1px solid hsl(248, 76%, 76%);
+}
+
+div.white{
+    box-sizing: border-box;
+    height: 30em;
+    background-color: white;
+    padding: 1em;
+    width: 30em;
+    text-align: center;
+    padding-top: 2em;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
+    transition: 00.5s;
+}
+
+input#fname,input#lname,input#email,input#pass{
+    width: 20em ;
+    height: 3em;
+    font-family: poppins;
+    font-weight: 600;
+    color: black;
+    padding-left: 2em;
+    border-radius: 6px;
+    border: 2px solid rgb(245, 239, 239);
+}
+
+div.form-control {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+div.form-control i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    visibility: hidden;
+}
+
+div.form-control small {
+    position: absolute;
+    right: 0;
+    color: #ff7978;
+    font-style: italic;
+    font-size: 10px;
+    visibility: hidden;
+}
+
+div.form-control.error input {
+    border-color: hsl(0, 100%, 74%) ;
+}
+
+div.form-control.success input {
+    border-color: green;
+}
+
+div.form-control.error i {
+    visibility: visible;
+    color: hsl(0, 100%, 74%) ;
+}
+
+div.form-control.error small {
+    visibility: visible;
+    color: hsl(0, 100%, 74%) ;
+}
+
+button.free{
+    box-sizing: border-box;
+    font-family: poppins;
+    font-size: 16px;
+    color: whitesmoke;
+    font-weight: 700;
+    background-color: hsl(154, 59%, 51%);
+    width: 20em;
+    height: 3em;
+    border-radius: 6px;
+    border: 1px solid hsl(154, 59%, 51%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button.free:hover{
+    background-color: hsl(155, 55%, 71%);
+    border: 1px solid hsl(155, 55%, 71%);
+}
+
+p.term{
+    font-size: 10px;
+    color: grey;
+    text-align: center;
+}
+
+span.buttom{
+    font-size: 10px;
+    color: hsl(0, 100%, 74%);
+}
+
+span{
+    font-weight: 700;
+}
+
+
+ @media only screen and (max-width: 900px) {
+    div.flex-container{
+        flex-direction: column;
+        padding-right: 3em;
+    }
+} 
+
+@media only screen and (max-width: 700px) {
+    div.flex-container{
+        flex-direction: column;
+        width: 50%;
+    }
+
+    section.reg{
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    div.flex-container{
+        padding-right: 2em;
+    }
+    
+    section.sentence{
+        text-align: center;
+        padding-top: 3em;
+        padding-left: 2em;
+    }
+    h1{
+        font-size: 19px;
+    }
+    p{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    button.days{
+        height: 5em;
+        width: 20em;
+        font-size: 12px;
+        text-align: center;
+}
+input#fname,input#lname,input#email,input#pass{
+        width: 14em;
+        padding-left: 1em;
+        font-weight: 550;
+    }
+    div.white{
+        width: 15em;
+    }
+    button.free{
+        width: 17em;
+        font-weight: 550;
+        font-size: 12px;
+        
+    }
+    section.reg{
+        padding-top: 1em;
+    }
+    body{
+        background-image: url(bg-intro-mobile.png);
+    }
+
+
+}
