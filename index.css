@@ -96,10 +96,11 @@ div.form-control i {
 
 div.form-control small {
     position: absolute;
-    right: 0;
+    right: 11em;
     color: #ff7978;
     font-style: italic;
     font-size: 10px;
+    top: 1.5em;
     visibility: hidden;
 }
 
@@ -218,6 +219,15 @@ input#fname,input#lname,input#email,input#pass{
     body{
         background-image: url(bg-intro-mobile.png);
     }
+    div.form-control small {
+        position: absolute;
+        right: 2em;
+        color: #ff7978;
+        font-style: italic;
+        font-size: 10px;
+        visibility: hidden;
+        top: 4.5em;
 
 
+}
 }
