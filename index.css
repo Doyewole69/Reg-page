@@ -103,6 +103,14 @@ div.form-control small {
     top: 1.5em;
     visibility: hidden;
 }
+div.form-control p#small {
+    position: absolute;
+    right: 11em;
+    color: #ff7978;
+    font-style: italic;
+    font-size: 10px;
+    top: 1.5em;
+    visibility: hidden;}
 
 div.form-control.error input {
     border-color: hsl(0, 100%, 74%) ;

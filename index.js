@@ -98,7 +98,7 @@ function setError(input, message) {
 
     const formControl = input.parentElement;
 
-    const small = formControl.querySelector('small');
+    const small = formControl.querySelector('p#small');
 
  
 
